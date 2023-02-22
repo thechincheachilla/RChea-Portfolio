@@ -12,34 +12,41 @@ type NavItem = {
 
 const StyledNavLink = styled(NavLink)(({ theme }) => ({
     color: theme.palette.text.primary,
-    textDecoration: 'none'
+    textDecoration: 'none',
+    '&.active':
+        {
+            backgroundColor: theme.palette.primary.dark,
+            color: theme.palette.primary.light
+        },
+    padding: 10,
+    borderRadius: 10
 }))
 
 export function NavigationBar() {
     const navItems: NavItem[] = [
         {
-            text: "HOME",
+            text: "Home",
             link: "/home"
         },
         {
-            text: "EXPERIENCE",
+            text: "Experience",
             link: "/experience"
         },
         {
-            text: "PROJECTS",
+            text: "Projects",
             link: "/projects"
         },
         {
-            text: "POWERLIFTING",
+            text: "Powerlifting",
             link: "/powerlifting"
         },
         {
-            text: "ABOUT",
-            link: "/about"
+            text: "Desk of the Day",
+            link: "/desk-of-the-day"
         },
         {
-            text: "DESK OF THE DAY",
-            link: "/desk-of-the-day"
+            text: "About",
+            link: "/about"
         }
     ]
     
@@ -49,7 +56,7 @@ export function NavigationBar() {
                 <Typography
                     component={StyledNavLink}
                     to={link}
-                    variant='h5'
+                    variant='subtitle1'
                     color='primary'
                 >
                     {text}
