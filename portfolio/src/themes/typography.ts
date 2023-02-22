@@ -34,19 +34,19 @@ export const typographyTheme = ({
     h4: {
         fontFamily: fonts,
         fontSize: '1.125rem',
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 1.21,
     },
     h5: {
         fontFamily: fonts,
         fontSize: '1rem',
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 1.21,
     },
     h6: {
         fontFamily: fonts,
         fontSize: '0.875rem',
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 1.21,
     },
     subtitle1: {

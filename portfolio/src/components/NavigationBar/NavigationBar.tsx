@@ -56,7 +56,7 @@ export function NavigationBar() {
                 <Typography
                     component={StyledNavLink}
                     to={link}
-                    variant='subtitle1'
+                    variant='h4'
                     color='primary'
                 >
                     {text}
