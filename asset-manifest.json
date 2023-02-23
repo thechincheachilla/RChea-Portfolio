@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/RChea-Portfolio/static/css/main.073c9b0a.css",
+    "main.js": "/RChea-Portfolio/static/js/main.a6765225.js",
+    "static/js/787.0e8cf1a7.chunk.js": "/RChea-Portfolio/static/js/787.0e8cf1a7.chunk.js",
+    "static/media/Profile.jpg": "/RChea-Portfolio/static/media/Profile.d53f3c402d79bcbc2d5d.jpg",
+    "static/media/Resume.pdf": "/RChea-Portfolio/static/media/Resume.22aed984ff5e858ef1f9.pdf",
+    "index.html": "/RChea-Portfolio/index.html",
+    "main.073c9b0a.css.map": "/RChea-Portfolio/static/css/main.073c9b0a.css.map",
+    "main.a6765225.js.map": "/RChea-Portfolio/static/js/main.a6765225.js.map",
+    "787.0e8cf1a7.chunk.js.map": "/RChea-Portfolio/static/js/787.0e8cf1a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a6765225.js"
+  ]
+}
