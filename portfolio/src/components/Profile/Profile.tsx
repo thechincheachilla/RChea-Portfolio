@@ -6,7 +6,11 @@ import StoreIcon from "@mui/icons-material/Store";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Link from "@mui/material/Link";
 
-export function Profile() {
+type ProfileProps = {
+  isMobile: boolean;
+};
+
+export function Profile({ isMobile }: ProfileProps) {
   const mailLink = "mailto:reiden.chea@gmail.com";
   const githubLink = "https://github.com/thechincheachilla";
   const linkedInLink = "https://www.linkedin.com/in/reiden-chea/";
@@ -25,26 +29,36 @@ export function Profile() {
         flexDirection: "column",
       }}
     >
+      {isMobile && (
+        <Stack direction="row" gap={1} mb={2}>
+          <Typography variant="h1">Reiden</Typography>
+          <Typography variant="h1" color="primary.dark">
+            Chea
+          </Typography>
+        </Stack>
+      )}
       <Box
         sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
-        <Stack direction="column" gap={2} mr={5} maxWidth="40%">
-          <Stack direction="row" gap={1}>
-            <Typography variant="h1">Reiden</Typography>
-            <Typography variant="h1" color="primary.dark">
-              Chea
+        {!isMobile && (
+          <Stack direction="column" gap={2} mr={5} maxWidth="40%">
+            <Stack direction="row" gap={1}>
+              <Typography variant="h1">Reiden</Typography>
+              <Typography variant="h1" color="primary.dark">
+                Chea
+              </Typography>
+            </Stack>
+            <Typography variant="body1" color="primary.dark">
+              {profileText}
             </Typography>
           </Stack>
-          <Typography variant="body1" color="primary.dark">
-            {profileText}
-          </Typography>
-        </Stack>
+        )}
         <Avatar
           sx={{ width: 250, height: 250 }}
           src={require(".//Profile.jpg")}
         />
       </Box>
-      <Stack direction="row" gap={2} mb={5}>
+      <Stack direction="row" gap={2} mb={5} mt={2}>
         <Link href={mailLink} target="_blank">
           <EmailIcon fontSize="large" />
         </Link>
@@ -61,7 +75,7 @@ export function Profile() {
           <YouTubeIcon fontSize="large" />
         </Link>
       </Stack>
-      <Typography variant="h3">
+      <Typography variant="h3" textAlign="center">
         "Your First Design Always Sucks" — James Wilson
       </Typography>
     </Box>
