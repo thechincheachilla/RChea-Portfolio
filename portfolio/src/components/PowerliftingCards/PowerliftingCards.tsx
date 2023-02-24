@@ -328,12 +328,10 @@ export function PowerliftingCards({
               top: "15vh",
               width: {
                 xs: "100%",
-                sm: 900,
+                md: 900,
               },
-              transform: {
-                xs: "none",
-                sm: "translateX(-50%)",
-              },
+              maxHeight: "80vh",
+              transform: "translateX(-50%)",
             }}
           >
             <Box sx={{ overflow: "auto", px: 4, py: 4 }}>
