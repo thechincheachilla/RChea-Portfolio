@@ -81,6 +81,8 @@ export function PowerliftingCards() {
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
+        alignItems: "flex-start",
+        width: { xs: "100%" },
       }}
     >
       <Typography
@@ -100,7 +102,7 @@ export function PowerliftingCards() {
         }}
       >
         {powerliftingCards.map((card) => (
-          <Card sx={{ height: 500, width: 400 }}>
+          <Card sx={{ height: 500, width: 385 }}>
             <CardMedia component="img" src={card.image} sx={{ height: 300 }} />
             <CardContent sx={{ height: 120 }}>
               <Stack direction="row" gap={1} alignItems="center" mb={1}>
