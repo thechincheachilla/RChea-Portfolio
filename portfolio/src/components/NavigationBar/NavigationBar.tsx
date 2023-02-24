@@ -40,22 +40,22 @@ export function NavigationBar({ isDesktop }: NavigationBarProps) {
       text: "Experience",
       link: "/experience",
     },
-    {
-      text: "Projects",
-      link: "/projects",
-    },
+    // {
+    //   text: "Projects",
+    //   link: "/projects",
+    // },
     {
       text: "Powerlifting",
       link: "/powerlifting",
     },
-    {
-      text: "Desk of the Day",
-      link: "/desk-of-the-day",
-    },
-    {
-      text: "About",
-      link: "/about",
-    },
+    // {
+    //   text: "Desk of the Day",
+    //   link: "/desk-of-the-day",
+    // },
+    // {
+    //   text: "About",
+    //   link: "/about",
+    // },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

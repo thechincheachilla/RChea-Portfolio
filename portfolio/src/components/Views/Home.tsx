@@ -10,8 +10,6 @@ export function Home() {
     }
   );
 
-  console.log(isMobile);
-
   return (
     <Page>
       <Profile isMobile={isMobile} />

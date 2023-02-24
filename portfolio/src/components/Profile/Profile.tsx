@@ -19,6 +19,7 @@ export function Profile({ isMobile }: ProfileProps) {
     "https://www.youtube.com/channel/UCPXfeAd7JaN-0VPBYw4yzJA";
   const profileText =
     "I am a Software Engineer 1 for SeekOut and a Masters student at Georgia Tech pursuing a Master's in Computer Science with a specialization in Machine Learning. I received a B.S. in Computer Science from the University of Washington - Seattle and graduated Cum Laude. I am a full stack engineer, but specialize in the backend and API integration. In my free time, I like to study other languages (日本語 and Spanish), play Pokemon, and powerlift.";
+  const quote = '"Your First Design Always Sucks" — James Wilson';
 
   return (
     <Box
@@ -76,7 +77,7 @@ export function Profile({ isMobile }: ProfileProps) {
         </Link>
       </Stack>
       <Typography variant="h3" textAlign="center">
-        "Your First Design Always Sucks" — James Wilson
+        {quote}
       </Typography>
     </Box>
   );
