@@ -11,7 +11,7 @@ import IFrame from "react-iframe";
 
 export function ExperienceAccordion() {
   return (
-    <Box sx={{ width: "75%" }}>
+    <Box sx={{ width: "100%" }}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
