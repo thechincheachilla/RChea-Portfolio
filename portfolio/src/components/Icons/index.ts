@@ -1,1 +1,1 @@
-export { ReactIcon } from './ReactIcon';
+export { ReactIcon } from "./ReactIcon";
