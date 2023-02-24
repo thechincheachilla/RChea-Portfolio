@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Navigate,
   Route,
@@ -19,5 +19,5 @@ export const createRouter = () => {
       <Route path="*" element={<Navigate to="/home" />} />
     </Route>,
   ]);
-  return createBrowserRouter(routes);
+  return createHashRouter(routes);
 };
