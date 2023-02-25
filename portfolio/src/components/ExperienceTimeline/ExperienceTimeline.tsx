@@ -56,13 +56,6 @@ const experiences: ExperienceDetails[] = [
   },
 ];
 
-type TimelineDetailsProps = {
-  date?: string;
-  title?: string;
-  description?: string;
-  logo?: string;
-};
-
 type ExperienceTimelineProps = {
   isDesktop: boolean;
 };
