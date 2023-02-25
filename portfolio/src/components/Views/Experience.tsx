@@ -1,4 +1,4 @@
-import { Box, Typography, Theme, useMediaQuery } from "@mui/material";
+import { Theme, useMediaQuery } from "@mui/material";
 import { ExperienceTimeline } from "../ExperienceTimeline";
 import { Page } from "../Page";
 import { ExperienceAccordion } from "../ExperienceAccordion";

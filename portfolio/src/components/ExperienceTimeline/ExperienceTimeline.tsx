@@ -12,6 +12,10 @@ import seekoutLogo from "./seekout.jpg";
 import gatechSeal from "./gatechSeal.png";
 import uwSeal from "./uwSeal.png";
 import uwCseLogo from "./uwCseLogo.jpg";
+import etsyLogo from "./3dModdedPuzzlesLogo.png";
+import attLogo from "./attLogo.png";
+import wtsaLogo from "./wtsaLogo.jpg";
+import mthsStemLogo from "./mthsStemLogo.png";
 
 type ExperienceDetails = {
   date?: string;
@@ -39,6 +43,22 @@ const experiences: ExperienceDetails[] = [
     logo: gatechSeal,
   },
   {
+    date: "8.13.15 ~ Present",
+    title: "3dModdedPuzzles — Shop Owner",
+    location: "Lynnwood, Washington",
+    description:
+      "In my first year of high school, I began tinkering with 3D printers and started creating CAD files to modify existing twisty puzzles into something new. Eventually, I started selling building and selling these puzzles on Etsy. Today, I continue to design, 3D print, post-process, and assemble these rare puzzles for customers across the globe.",
+    logo: etsyLogo,
+  },
+  {
+    date: "1.11.20 ~ Present",
+    title: "WTSA — Judge, Coordinator",
+    location: "Washington",
+    description:
+      "Every year, I judge and/or coordinate events for the WA Technology Student Association state conference. I have coordinated the Animatronics event, and have judged Animatronics, Structrual Design, Science Visualization, Biotechnology Design, Video Game Design, Webmaster, and other events.",
+    logo: wtsaLogo,
+  },
+  {
     date: "9.28.19 ~ 3.18.22",
     title: "University of Washington — Undergraduate Student",
     location: "Seattle, Washington",
@@ -53,6 +73,30 @@ const experiences: ExperienceDetails[] = [
     description:
       "I TA'd for the first time in my final quarter as an undergraduate student for UW's Data Visualization course. I maintained the policy of \"any-hour-office-hours\", hosting office hours as late as 1 am for students in dire need of assistance. I focused on explaining concepts to students and helping them determine the best decisions for their visualizations.",
     logo: uwCseLogo,
+  },
+  {
+    date: "6.28.21 ~ 9.10.21",
+    title: "AT&T TDP — SWE ML Intern",
+    location: "Bothell, Washington",
+    description:
+      "I interned for AT&T over the summer of 2021 and worked with an ML team. Collaborating with another intern, I was responsible for developing a classification model for predicting tags of rows of data under the constraint that the data set was sparse. Halfway into my internship, I successfully developed a random forest classifier model with a test set accuracy exceeding 90%.",
+    logo: attLogo,
+  },
+  {
+    date: "6.29.20 ~ 9.11.20",
+    title: "AT&T TDP — SWE WebDev Intern",
+    location: "Bothell, Washington",
+    description:
+      "I interned for AT&T over the summer of 2020 and worked on an application called TOWER, the Tech-Ops Work Empowerment Repository, an internal tool for cost tracking. I was responsible for creating front end components and backend API routes with Vue.js and flask, and ultimately created an e2e feature near the end of my internship.",
+    logo: attLogo,
+  },
+  {
+    date: "9.9.15 ~ 6.15.19",
+    title: "Mountlake Terrace HS — Student",
+    location: "Mountlake Terrace, Washington",
+    description:
+      "I attended MTHS for high school and enrolled in the STEM program, specializing in the Computer Science pathway. My primary extracurricular activity was TSA (Technology Student Association), where I lead the club to prominence as a top TSA school in the state and nationwide while organizing fundraisers to ensure full coverage of student fees. MTHS TSA remains one of the top TSA programs in WA to this day. I also participated in FRC robotics, Jazz 1, STEM leadership, TEMPO yearbook, and more.",
+    logo: mthsStemLogo,
   },
 ];
 
