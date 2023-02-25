@@ -45,7 +45,7 @@ const powerliftingCards: PowerliftingCard[] = [
   {
     image: holidayClassicImg,
     title: "WA: Holiday Classic",
-    date: "12.4.23",
+    date: "12.4.22",
     description:
       "A near disaster of a meet. After failing to hit squat depth twice in a row, I barely eeked out a successful lift to stay in the meet. Somehow, I had my best day on bench and deadlift, finally achieving a 100 kg bench, 200 kg deadlift, and 400+ DOTS.",
     details: {
@@ -70,6 +70,7 @@ const powerliftingCards: PowerliftingCard[] = [
       ],
       total: "452.5 kg / 997.6 lbs (WA State record)",
       measures: "DOTS: 409.6, Wilks: 417.1",
+      multipliers: "Squat: 2.76x, Bench: 1.81x, Deadlift: 3.62x, Total: 8.18x",
       place: "1st (uncontested)",
       drugTested: "No",
     },
@@ -102,6 +103,7 @@ const powerliftingCards: PowerliftingCard[] = [
         "3rd Attempt: 190 kg / 418.9 lbs 🔴🔴🔴 (American record attempt)",
       ],
       total: "430 kg / 948 lbs (WA State record)",
+      multipliers: "Squat: 2.89x, Bench: 1.72x, Deadlift: 3.17x, Total: 7.78x",
       measures: "DOTS: 389.3, Wilks: 396.5",
       place: "2nd",
       drugTested: "Yes",
