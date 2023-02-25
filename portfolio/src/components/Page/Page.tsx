@@ -1,14 +1,26 @@
-import { Container, Stack } from "@mui/material";
+import { Container, Stack, Typography } from "@mui/material";
 import { Header } from "../NavigationBar";
 
 export type PageProps = {
+  title?: string;
   children?: React.ReactNode;
 };
 
-export function Page({ children }: PageProps) {
+export function Page({ title, children }: PageProps) {
   return (
     <Stack>
       <Header />
+      {title && (
+        <Typography
+          variant="h1"
+          color="primary.dark"
+          ml={6}
+          mt={6}
+          sx={{ textDecoration: "underline" }}
+        >
+          {title}
+        </Typography>
+      )}
       <Container
         component="main"
         maxWidth="xl"
@@ -16,7 +28,7 @@ export function Page({ children }: PageProps) {
           alignItems: "center",
           display: "flex",
           flexDirection: "column",
-          my: 10,
+          my: 2,
           p: { xs: 2, sm: 5 },
         }}
       >

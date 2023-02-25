@@ -443,6 +443,7 @@ export function PowerliftingCards({
                 width: { xs: "100%" },
                 maxWidth: 385,
               }}
+              elevation={6}
             >
               <CardMedia
                 component="img"
