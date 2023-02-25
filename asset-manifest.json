@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0fe3f8ac.css",
-    "main.js": "/static/js/main.cde2e257.js",
+    "main.js": "/static/js/main.16fa3f52.js",
     "static/js/787.0e8cf1a7.chunk.js": "/static/js/787.0e8cf1a7.chunk.js",
     "static/media/Holiday_Classic.png": "/static/media/Holiday_Classic.7d731040c63bdadcdfb0.png",
     "static/media/Collegiate_Nationals.png": "/static/media/Collegiate_Nationals.03e8648144bcc078a014.png",
@@ -11,16 +11,20 @@
     "static/media/WA_Championship.jpg": "/static/media/WA_Championship.0ad3055da0b21156623e.jpg",
     "static/media/Profile.jpg": "/static/media/Profile.d53f3c402d79bcbc2d5d.jpg",
     "static/media/uwSeal.png": "/static/media/uwSeal.419ee525844cade4aec7.png",
+    "static/media/3dModdedPuzzlesLogo.png": "/static/media/3dModdedPuzzlesLogo.d8ec07b3f1201af22720.png",
+    "static/media/attLogo.png": "/static/media/attLogo.57ea046e5be81535a554.png",
     "static/media/gatechSeal.png": "/static/media/gatechSeal.ece96b4176c3a2375a6d.png",
+    "static/media/mthsStemLogo.png": "/static/media/mthsStemLogo.edc8aa7eb14e3222d479.png",
     "static/media/Resume.pdf": "/static/media/Resume.ed16693b1cde160435ea.pdf",
     "static/media/uwCseLogo.jpg": "/static/media/uwCseLogo.e4b5bdb45d5692747d64.jpg",
+    "static/media/wtsaLogo.jpg": "/static/media/wtsaLogo.a00ae840049a4814fc67.jpg",
     "index.html": "/index.html",
     "main.0fe3f8ac.css.map": "/static/css/main.0fe3f8ac.css.map",
-    "main.cde2e257.js.map": "/static/js/main.cde2e257.js.map",
+    "main.16fa3f52.js.map": "/static/js/main.16fa3f52.js.map",
     "787.0e8cf1a7.chunk.js.map": "/static/js/787.0e8cf1a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fe3f8ac.css",
-    "static/js/main.cde2e257.js"
+    "static/js/main.16fa3f52.js"
   ]
 }
