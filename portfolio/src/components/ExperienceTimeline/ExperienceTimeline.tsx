@@ -109,7 +109,7 @@ export function ExperienceTimeline({ isDesktop }: ExperienceTimelineProps) {
     <Box sx={{ maxHeight: "70vh", overflow: "auto", mt: 4 }}>
       <Timeline
         position={isDesktop ? "alternate" : "right"}
-        sx={{ ml: isDesktop ? 0 : "-70%" }}
+        sx={{ ml: isDesktop ? 0 : "-70vw" }}
       >
         {experiences.map((experience) => (
           <TimelineItem>
