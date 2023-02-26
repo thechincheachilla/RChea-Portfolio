@@ -66,6 +66,7 @@ export const typographyTheme = ({ breakpoints }: Theme): TypographyOptions => ({
     },
   },
   body1: {
+    fontFamily: fonts,
     fontSize: "0.875rem",
     fontWeight: 400,
     lineHeight: 1.21,
@@ -74,6 +75,7 @@ export const typographyTheme = ({ breakpoints }: Theme): TypographyOptions => ({
     },
   },
   body2: {
+    fontFamily: fonts,
     fontSize: "0.625rem",
     fontWeight: 400,
     lineHeight: 1.21,
@@ -82,6 +84,7 @@ export const typographyTheme = ({ breakpoints }: Theme): TypographyOptions => ({
     },
   },
   button: {
+    fontFamily: fonts,
     fontSize: "0.75rem",
     fontWeight: 400,
     lineHeight: 1.21,

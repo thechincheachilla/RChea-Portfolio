@@ -4,7 +4,7 @@ import { PowerliftingCards } from "../PowerliftingCards";
 
 export function Powerlifting() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalCardIndex, setModalCardIndex] = useState(-1);
+  const [modalCardIndex, setModalCardIndex] = useState(0);
 
   const handleCardClicked = (index: number) => {
     setIsModalOpen(true);
@@ -12,7 +12,7 @@ export function Powerlifting() {
   };
 
   return (
-    <Page>
+    <Page title="パワーリフティング">
       <PowerliftingCards
         modalOpen={isModalOpen}
         modalCardIndex={modalCardIndex}

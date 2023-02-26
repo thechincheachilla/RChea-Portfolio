@@ -32,8 +32,10 @@ export function Profile({ isMobile }: ProfileProps) {
     >
       {isMobile && (
         <Stack direction="row" gap={1} mb={2}>
-          <Typography variant="h1">Reiden</Typography>
-          <Typography variant="h1" color="primary.dark">
+          <Typography variant="h1" fontWeight={800}>
+            Reiden
+          </Typography>
+          <Typography variant="h1" color="primary.dark" fontWeight={800}>
             Chea
           </Typography>
         </Stack>
@@ -44,8 +46,10 @@ export function Profile({ isMobile }: ProfileProps) {
         {!isMobile && (
           <Stack direction="column" gap={2} mr={5} maxWidth="40%">
             <Stack direction="row" gap={1}>
-              <Typography variant="h1">Reiden</Typography>
-              <Typography variant="h1" color="primary.dark">
+              <Typography variant="h1" fontWeight={800}>
+                Reiden
+              </Typography>
+              <Typography variant="h1" color="primary.dark" fontWeight={800}>
                 Chea
               </Typography>
             </Stack>

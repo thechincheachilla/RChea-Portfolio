@@ -12,7 +12,7 @@ export function Experience() {
   );
 
   return (
-    <Page title="Experience">
+    <Page title="経験">
       <ExperienceAccordion />
       <ExperienceTimeline isDesktop={isDesktop} />
     </Page>

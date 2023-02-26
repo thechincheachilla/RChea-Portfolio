@@ -40,17 +40,17 @@ export function NavigationBar({ isDesktop }: NavigationBarProps) {
       text: "Experience",
       link: "/experience",
     },
-    // {
-    //   text: "Projects",
-    //   link: "/projects",
-    // },
+    {
+      text: "Projects",
+      link: "/projects",
+    },
     {
       text: "Powerlifting",
       link: "/powerlifting",
     },
     // {
     //   text: "Desk of the Day",
-    //   link: "/desk-of-the-day",
+    //   link: "/desk-of-the-day",x
     // },
     // {
     //   text: "About",

@@ -443,7 +443,7 @@ export function PowerliftingCards({
               sx={{
                 height: 400,
                 width: { xs: "100%" },
-                maxWidth: 385,
+                maxWidth: 400,
               }}
               elevation={6}
             >
