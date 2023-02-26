@@ -1,8 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.0fe3f8ac.css",
-    "main.js": "/static/js/main.7c83eb09.js",
+    "main.js": "/static/js/main.53d2eb36.js",
     "static/js/787.0e8cf1a7.chunk.js": "/static/js/787.0e8cf1a7.chunk.js",
+    "static/media/TopView.jpg": "/static/media/TopView.9bb4cfd133fc2ab5f6c8.jpg",
+    "static/media/SideView.jpg": "/static/media/SideView.f607786968ea9cf12edc.jpg",
+    "static/media/Magnets.jpg": "/static/media/Magnets.86996a5b3c313aff8d4a.jpg",
     "static/media/Holiday_Classic.png": "/static/media/Holiday_Classic.7d731040c63bdadcdfb0.png",
     "static/media/Collegiate_Nationals.png": "/static/media/Collegiate_Nationals.03e8648144bcc078a014.png",
     "static/media/Reboot.png": "/static/media/Reboot.25d065c262c6c8b5b94a.png",
@@ -10,21 +13,23 @@
     "static/media/Rookie.png": "/static/media/Rookie.30f05f76ad280b7ec2ba.png",
     "static/media/WA_Championship.jpg": "/static/media/WA_Championship.0ad3055da0b21156623e.jpg",
     "static/media/Profile.jpg": "/static/media/Profile.d53f3c402d79bcbc2d5d.jpg",
+    "static/media/SenateExpenditures.png": "/static/media/SenateExpenditures.cad6f3c9474ba74d0284.png",
     "static/media/uwSeal.png": "/static/media/uwSeal.419ee525844cade4aec7.png",
     "static/media/3dModdedPuzzlesLogo.png": "/static/media/3dModdedPuzzlesLogo.d8ec07b3f1201af22720.png",
     "static/media/attLogo.png": "/static/media/attLogo.57ea046e5be81535a554.png",
     "static/media/gatechSeal.png": "/static/media/gatechSeal.ece96b4176c3a2375a6d.png",
+    "static/media/BufferOverflow.png": "/static/media/BufferOverflow.927f11b7f65c1af0191d.png",
     "static/media/mthsStemLogo.png": "/static/media/mthsStemLogo.edc8aa7eb14e3222d479.png",
     "static/media/Resume.pdf": "/static/media/Resume.ed16693b1cde160435ea.pdf",
     "static/media/uwCseLogo.jpg": "/static/media/uwCseLogo.e4b5bdb45d5692747d64.jpg",
     "static/media/wtsaLogo.jpg": "/static/media/wtsaLogo.a00ae840049a4814fc67.jpg",
     "index.html": "/index.html",
     "main.0fe3f8ac.css.map": "/static/css/main.0fe3f8ac.css.map",
-    "main.7c83eb09.js.map": "/static/js/main.7c83eb09.js.map",
+    "main.53d2eb36.js.map": "/static/js/main.53d2eb36.js.map",
     "787.0e8cf1a7.chunk.js.map": "/static/js/787.0e8cf1a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fe3f8ac.css",
-    "static/js/main.7c83eb09.js"
+    "static/js/main.53d2eb36.js"
   ]
 }
