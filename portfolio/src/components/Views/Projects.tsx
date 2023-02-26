@@ -9,7 +9,7 @@ export function Projects() {
   const [modalCardIndex, setModalCardIndex] = useState(0);
 
   const isMobile = useMediaQuery(
-    ({ breakpoints }: Theme) => breakpoints.down("sm"),
+    ({ breakpoints }: Theme) => breakpoints.down("md"),
     {
       noSsr: true,
     }

@@ -44,7 +44,7 @@ const projectCards: ProjectCard[] = [
         link: "https://github.com/thechincheachilla/Fourier-Keyboard-Cases",
       },
     ],
-    extraPictures: [peachGoma2, peachGoma3],
+    extraPictures: [peachGoma1, peachGoma2, peachGoma3],
   },
   {
     title: "Visualization Animation: One-Byte Buffer Overflows",
@@ -78,6 +78,7 @@ const projectCards: ProjectCard[] = [
         link: "https://observablehq.com/@thechincheachilla/the-off-by-one-exploit",
       },
     ],
+    extraPictures: [bufferOverflow],
   },
   {
     title: "Visualization: US Senate Expenditures 2000 - 2020",
@@ -95,6 +96,7 @@ const projectCards: ProjectCard[] = [
         link: "https://observablehq.com/@thechincheachilla/amount-spent-on-us-senate-election-campaigns",
       },
     ],
+    extraPictures: [senateExpenditures],
   },
 ];
 
@@ -194,28 +196,27 @@ export function ProjectCards({
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                width: "50%",
+                width: isMobile ? "100%" : "50%",
               }}
             >
               <CardContent sx={{ flex: "1 0 auto" }}>
                 <Typography variant="h3" color="primary.dark" mb={2}>
                   {card.title}
                 </Typography>
-                {!isMobile && (
-                  <Typography
-                    variant="body1"
-                    sx={{
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                      display: "-webkit-box",
-                      WebkitLineClamp: maxLines,
-                      WebkitBoxOrient: "vertical",
-                      whiteSpace: "pre-line",
-                    }}
-                  >
-                    {card.description}
-                  </Typography>
-                )}
+
+                <Typography
+                  variant="body1"
+                  sx={{
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    display: "-webkit-box",
+                    WebkitLineClamp: maxLines,
+                    WebkitBoxOrient: "vertical",
+                    whiteSpace: "pre-line",
+                  }}
+                >
+                  {card.description}
+                </Typography>
               </CardContent>
               <Box sx={{ ml: 1, mb: 1 }}>
                 <Button variant="text" onClick={() => onCardClicked(index)}>
@@ -224,19 +225,21 @@ export function ProjectCards({
                 {card.link && <CardButton card={card} />}
               </Box>
             </Box>
-            <Paper
-              sx={{
-                width: "50%",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                height: 350,
-                minWidth: 500,
-              }}
-              elevation={4}
-            >
-              <CardMedia component="img" image={card.image} />
-            </Paper>
+            {!isMobile && (
+              <Paper
+                sx={{
+                  width: "50%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  height: 350,
+                  minWidth: 500,
+                }}
+                elevation={4}
+              >
+                <CardMedia component="img" image={card.image} />
+              </Paper>
+            )}
           </Card>
         ))}
       </Stack>
