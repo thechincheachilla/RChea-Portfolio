@@ -8,14 +8,15 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import { Avatar, Box, Paper, Typography } from "@mui/material";
-import seekoutLogo from "./seekout.jpg";
-import gatechSeal from "./gatechSeal.png";
-import uwSeal from "./uwSeal.png";
-import uwCseLogo from "./uwCseLogo.jpg";
-import etsyLogo from "./3dModdedPuzzlesLogo.png";
-import attLogo from "./attLogo.png";
-import wtsaLogo from "./wtsaLogo.jpg";
-import mthsStemLogo from "./mthsStemLogo.png";
+
+import seekoutLogo from "/assets/Experience/seekout.jpg";
+import gatechSeal from "/assets/Experience/gatechSeal.png";
+import uwSeal from "/assets/Experience/uwSeal.png";
+import uwCseLogo from "/assets/Experience/uwCseLogo.jpg";
+import etsyLogo from "/assets/Experience/3dModdedPuzzlesLogo.png";
+import attLogo from "/assets/Experience/attLogo.png";
+import wtsaLogo from "/assets/Experience/wtsaLogo.jpg";
+import mthsStemLogo from "/assets/Experience/mthsStemLogo.png";
 
 type ExperienceDetails = {
   date?: string;
@@ -44,7 +45,7 @@ const experiences: ExperienceDetails[] = [
   },
   {
     date: "8.13.15 ~ Present",
-    title: "3dModdedPuzzles — Shop Owner",
+    title: "3D Modded Puzzles — Shop Owner",
     location: "Lynnwood, Washington",
     description:
       "In my first year of high school, I began tinkering with 3D printers and started creating CAD files to modify existing twisty puzzles into something new. Eventually, I started selling building and selling these puzzles on Etsy. Today, I continue to design, 3D print, post-process, and assemble these rare puzzles for customers across the globe.",
@@ -106,7 +107,7 @@ type ExperienceTimelineProps = {
 
 export function ExperienceTimeline({ isDesktop }: ExperienceTimelineProps) {
   return (
-    <Box sx={{ maxHeight: "70vh", overflow: "auto", mt: 4 }}>
+    <Box sx={{ maxHeight: "65vh", overflow: "auto", mt: 4 }}>
       <Timeline
         position={isDesktop ? "alternate" : "right"}
         sx={{ ml: isDesktop ? 0 : "-60vw" }}

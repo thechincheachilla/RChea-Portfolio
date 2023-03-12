@@ -60,7 +60,7 @@ export function Profile({ isMobile }: ProfileProps) {
         )}
         <Avatar
           sx={{ width: 250, height: 250 }}
-          src={require(".//Profile.jpg")}
+          src={"assets/Profile/Profile.jpg"}
         />
       </Box>
       <Stack direction="row" gap={2} mb={5} mt={2}>

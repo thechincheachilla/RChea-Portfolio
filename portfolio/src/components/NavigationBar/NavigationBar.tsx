@@ -26,8 +26,11 @@ const StyledNavLink = styled(NavLink)(({ theme }) => ({
     backgroundColor: theme.palette.primary.dark,
     color: theme.palette.primary.light,
   },
-  padding: 10,
-  borderRadius: 10,
+  paddingLeft: 10,
+  paddingRight: 10,
+  paddingTop: 15,
+  paddingBottom: 15,
+  borderRadius: 5,
 }));
 
 export function NavigationBar({ isDesktop }: NavigationBarProps) {

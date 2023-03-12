@@ -33,7 +33,7 @@ export function ExperienceAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <IFrame
-            url={require(".//Resume.pdf")}
+            url={"assets/Experience/Resume.pdf"}
             width="100%"
             styles={{ minHeight: window.innerHeight }}
           />

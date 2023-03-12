@@ -12,11 +12,11 @@ import {
   Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import bufferOverflow from "./BufferOverflow.png";
-import senateExpenditures from "./SenateExpenditures.png";
-import peachGoma1 from "./PeachGoma/SideView.jpg";
-import peachGoma2 from "./PeachGoma/TopView.jpg";
-import peachGoma3 from "./PeachGoma/Magnets.jpg";
+import bufferOverflow from "/assets/Projects/BufferOverflow.png";
+import senateExpenditures from "/assets/Projects/SenateExpenditures.png";
+import peachGoma1 from "/assets/Projects/PeachGoma/SideView.jpg";
+import peachGoma2 from "/assets/Projects/PeachGoma/TopView.jpg";
+import peachGoma3 from "/assets/Projects/PeachGoma/Magnets.jpg";
 
 type AssetLink = {
   title: string;
@@ -143,21 +143,22 @@ export function ProjectCards({
               flexDirection: "column",
               left: "50%",
               position: "absolute",
-              top: "15vh",
+              top: "5vh",
               width: {
                 xs: "100%",
                 md: 900,
               },
-              maxHeight: "80vh",
+              maxHeight: "90vh",
               transform: "translateX(-50%)",
+              px: 3,
             }}
           >
             <Box sx={{ overflow: "auto", px: 4, py: 4 }}>
               <Box
                 sx={({ spacing }) => ({
                   position: "absolute",
-                  right: spacing(2),
-                  top: spacing(2),
+                  right: spacing(1),
+                  top: spacing(1),
                 })}
               >
                 <IconButton onClick={onModalClose}>
@@ -180,8 +181,15 @@ export function ProjectCards({
                 <Typography variant="h5">Assets:</Typography>
                 {currCard.assetLinks &&
                   currCard.assetLinks.map((link, index) => (
-                    <Link key={index} href={link.link}>
-                      <Typography mt={1}>{link.title}</Typography>
+                    <Link
+                      key={index}
+                      href={link.link}
+                      target="_blank"
+                      underline="hover"
+                    >
+                      <Typography variant="body1" mt={1}>
+                        {link.title}
+                      </Typography>
                     </Link>
                   ))}
               </Box>
@@ -189,60 +197,62 @@ export function ProjectCards({
           </Paper>
         </Modal>
       )}
-      <Stack gap={3} width="80%">
-        {projectCards.map((card, index) => (
-          <Card key={index} sx={{ display: "flex" }} elevation={6}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                width: isMobile ? "100%" : "50%",
-              }}
-            >
-              <CardContent sx={{ flex: "1 0 auto" }}>
-                <Typography variant="h3" color="primary.dark" mb={2}>
-                  {card.title}
-                </Typography>
-
-                <Typography
-                  variant="body1"
-                  sx={{
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    display: "-webkit-box",
-                    WebkitLineClamp: maxLines,
-                    WebkitBoxOrient: "vertical",
-                    whiteSpace: "pre-line",
-                  }}
-                >
-                  {card.description}
-                </Typography>
-              </CardContent>
-              <Box sx={{ ml: 1, mb: 1 }}>
-                <Button variant="text" onClick={() => onCardClicked(index)}>
-                  <Typography variant="h5">More Details</Typography>
-                </Button>
-                {card.link && <CardButton card={card} />}
-              </Box>
-            </Box>
-            {!isMobile && (
-              <Paper
+      <Box sx={{ maxHeight: "70vh", width: "80%", overflow: "auto", p: 3 }}>
+        <Stack gap={3}>
+          {projectCards.map((card, index) => (
+            <Card key={index} sx={{ display: "flex" }} elevation={6}>
+              <Box
                 sx={{
-                  width: "50%",
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center",
-                  height: 350,
-                  minWidth: 500,
+                  width: isMobile ? "100%" : "50%",
                 }}
-                elevation={4}
               >
-                <CardMedia component="img" image={card.image} />
-              </Paper>
-            )}
-          </Card>
-        ))}
-      </Stack>
+                <CardContent sx={{ flex: "1 0 auto" }}>
+                  <Typography variant="h3" color="primary.dark" mb={2}>
+                    {card.title}
+                  </Typography>
+
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      display: "-webkit-box",
+                      WebkitLineClamp: maxLines,
+                      WebkitBoxOrient: "vertical",
+                      whiteSpace: "pre-line",
+                    }}
+                  >
+                    {card.description}
+                  </Typography>
+                </CardContent>
+                <Box sx={{ ml: 1, mb: 1 }}>
+                  <Button variant="text" onClick={() => onCardClicked(index)}>
+                    <Typography variant="h5">More Details</Typography>
+                  </Button>
+                  {card.link && <CardButton card={card} />}
+                </Box>
+              </Box>
+              {!isMobile && (
+                <Paper
+                  sx={{
+                    width: "50%",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    height: 350,
+                    minWidth: 500,
+                  }}
+                  elevation={4}
+                >
+                  <CardMedia component="img" image={card.image} />
+                </Paper>
+              )}
+            </Card>
+          ))}
+        </Stack>
+      </Box>
     </>
   );
 }

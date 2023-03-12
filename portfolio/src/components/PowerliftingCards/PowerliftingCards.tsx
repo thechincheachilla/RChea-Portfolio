@@ -12,12 +12,12 @@ import {
   Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import holidayClassicImg from "./Holiday_Classic.png";
-import collegiateNationalsImg from "./Collegiate_Nationals.png";
-import championshipImg from "./WA_Championship.jpg";
-import rebootImg from "./Reboot.png";
-import westCoastOpenImg from "./West_Coast_Open.jpg";
-import rookieImg from "./Rookie.png";
+import holidayClassicImg from "/assets/Powerlifting/Holiday_Classic.png";
+import collegiateNationalsImg from "/assets/Powerlifting/Collegiate_Nationals.png";
+import championshipImg from "/assets/Powerlifting/WA_Championship.jpg";
+import rebootImg from "/assets/Powerlifting/Reboot.png";
+import westCoastOpenImg from "/assets/Powerlifting/West_Coast_Open.jpg";
+import rookieImg from "/assets/Powerlifting/Rookie.png";
 
 type PowerliftingCard = {
   image?: string;
@@ -327,12 +327,12 @@ export function PowerliftingCards({
               flexDirection: "column",
               left: "50%",
               position: "absolute",
-              top: "15vh",
+              top: "5vh",
               width: {
                 xs: "100%",
                 md: 900,
               },
-              maxHeight: "80vh",
+              maxHeight: "90vh",
               transform: "translateX(-50%)",
             }}
           >
@@ -340,8 +340,8 @@ export function PowerliftingCards({
               <Box
                 sx={({ spacing }) => ({
                   position: "absolute",
-                  right: spacing(2),
-                  top: spacing(2),
+                  right: spacing(1),
+                  top: spacing(1),
                 })}
               >
                 <IconButton onClick={onModalClose}>
